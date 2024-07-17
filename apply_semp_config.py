@@ -9,13 +9,11 @@ PASSWORD = 'mif0df790snl4agrs9n14umtks'
 
 # Example SEMP v2 request payload to create a queue
 semp_payload = {
-        {
         "msgVpnName": "solace-demo",
-        "egressEnabled": "true",
-        "ingressEnabled": "true",
+        "egressEnabled": True,
+        "ingressEnabled": True,
         "permission": "delete",
         "queueName": "githubactions"
-        }
 }
 
 def apply_semp_configuration():
