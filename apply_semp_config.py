@@ -10,9 +10,6 @@ PASSWORD = 'mif0df790snl4agrs9n14umtks'
 # Example SEMP v2 request payload to create a queue
 semp_payload = {
     "queue": {
-        "queueName": "githubaction",
-        "ingressEnabled":true,
-        "egressEnabled": true,
     }
 }
 
