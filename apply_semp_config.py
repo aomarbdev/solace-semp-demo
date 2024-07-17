@@ -11,9 +11,8 @@ PASSWORD = 'mif0df790snl4agrs9n14umtks'
 semp_payload = {
     "queue": {
         "msgVpnName": "solace-demo",
-        "egressEnabled": true,
         "ingressEnabled":true,
-        "permission": "delete",
+        "egressEnabled": true,
         "queueName": "githubaction"
     }
 }
