@@ -31,3 +31,4 @@ jobs:
         PASSWORD: ${{ secrets.PASSWORD }}
       run: |
         python apply_semp_config.py
+        python create_client_username.py
