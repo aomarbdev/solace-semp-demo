@@ -13,7 +13,7 @@ semp_payload = {
         "egressEnabled": True,
         "ingressEnabled": True,
         "permission": "delete",
-        "queueName": "sanoif-new-queue"
+        "queueName": "sanofi-new-queue"
 }
 
 def apply_semp_configuration():
