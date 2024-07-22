@@ -32,3 +32,4 @@ jobs:
       run: |
         python apply_semp_config.py
         python create_client_username.py
+        python configure_acl.py
