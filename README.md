@@ -43,3 +43,34 @@ Add the following secrets:
 - QUEUE_NAME: The name of the queue (e.g., demo-queue)
 - USERNAME: Your Solace username
 - PASSWORD: Your Solace password
+
+### 4. Scripts
+
+#### 1. Create msg vpn
+
+```python
+import requests
+import json
+
+SOLACE_HOST = 'your-solace-host'
+USERNAME = 'your-username'
+PASSWORD = 'your-password'
+
+vpn_payload = {
+    "msgVpnName": "demo-vpn",
+    "enabled": True
+}
+
+def create_vpn():
+    url = f"https://{SOLACE_HOST}:943/SEMP/v2/config/msgVpns"
+    headers = {'Content-Type': 'application/json'}
+
+    response = requests.post(url, headers=headers, data=json.dumps(vpn_payload), auth=(USERNAME, PASSWORD), verify=False)
+
+    if response.status_code == 200 or response.status_code == 201:
+        print("Message VPN created successfully")
+    else:
+        print(f"Failed to create Message VPN: {response.status_code}, {response.text}")
+
+if __name__ == "__main__":
+    create_vpn()
