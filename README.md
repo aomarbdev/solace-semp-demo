@@ -221,11 +221,12 @@ The GitHub Actions workflow is defined in `.github/workflows/semp.yml`. This wor
 ```
 
 
-.github/workflows/semp.yml
 
 ```markdown
 
 **.github/workflows/semp.yml**:
+```
+
 
 ```yaml
 name: Apply SEMP Configuration
