@@ -17,3 +17,11 @@ Before you begin, ensure you have the following:
 ```sh
 git clone https://github.com/<your-github-username>/solace-semp-demo.git
 cd solace-semp-demo
+
+## Prerequisites
+
+Before you begin, ensure you have the following:
+
+- A Solace PubSub+ Cloud account
+- A messaging service instance with SEMP v2 enabled
+- Python installed on your local machine
