@@ -7,7 +7,7 @@ USERNAME = 'solace-demo-admin'
 PASSWORD = 'mif0df790snl4agrs9n14umtks'
 
 client_username_payload = {
-    "clientUsername": "demo-sanofi-user1",
+    "clientUsername": "demo-sanofi-artur",
     "enabled": True
 }
 
